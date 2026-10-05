@@ -43,10 +43,14 @@
     });
   }
 
+  function setClear(visible) {
+    clearLine.classList.toggle("is-visible", !!visible);
+  }
+
   function showFound(found) {
     capsule.hidden = !found;
     review.classList.toggle("is-waiting", !found);
-    clearLine.hidden = true;
+    setClear(false);
     protect.classList.remove("is-pressed");
   }
 
@@ -113,7 +117,7 @@
       node.classList.add("tok");
     });
     protect.classList.add("is-pressed");
-    clearLine.hidden = false;
+    setClear(true);
     setPhase(config.phaseProtected, true);
     say(config.liveProtected, true);
     await sleep(2300);
