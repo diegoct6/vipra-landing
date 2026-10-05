@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vipra — Before you send that to AI.</title>
+  <link rel="canonical" href="https://vipra.app/" />
+  <meta property="og:url" content="https://vipra.app/" />
+  <meta property="og:image" content="https://vipra.app/og.png" />
+  <meta name="description" content="Vipra finds personal and sensitive information in your prompts and lets you protect it before you send it. Local processing. No subscription. Five free protections a day." />
+  <meta property="og:title" content="Before you send that to AI." />
+  <meta property="og:description" content="Vipra finds personal and sensitive information in your prompts and lets you protect it before you send it. Local processing. No subscription." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!--
+    Add to Chrome points at #pricing until the Chrome Web Store listing is live.
+    Replace those hrefs with the listing URL, for example:
+    https://chromewebstore.google.com/detail/vipra/<id>
+  -->
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Vipra home">
+        <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><path fill="#E11D48" d="M32 6 54 15.5v16.2c0 13.2-8.6 22.6-22 28.3C18.6 54.3 10 44.9 10 31.7V15.5L32 6z"/><path fill="none" stroke="#fff" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round" d="M21 19.5 L32 46 L43 19.5"/></svg>
+        Vipra
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="blog/">Blog</a>
+      </nav>
+      <a class="btn btn-primary" href="#pricing">Add to Chrome — Free</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">For the prompt you are about to send</p>
+          <h1>Before you send that to AI.</h1>
+          <p class="lede">Vipra finds personal and sensitive information in your prompts and lets you protect it before you send it.</p>
+          <p class="support-line">Local processing. No subscription.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#pricing">Add to Chrome — Free</a>
+            <a class="btn btn-ghost" href="#pricing">Unlock Lifetime — €4.99</a>
+          </div>
+          <p class="daily">5 free protections every day. Upgrade once for unlimited.</p>
+        </div>
+
+        <div class="demo">
+          <p class="sr-only" id="demoLive">A ChatGPT message with the name Diego Cuartas, the email diego@example.com, and a phone number. Vipra’s review lists them as Name, Email, and Phone, then Protect swaps them for [PERSON_1], [EMAIL_1], and [PHONE_1].</p>
+          <div class="scene">
+            <div class="window" title="Hover to tilt">
+              <div class="window-top">
+                <span class="dot r" aria-hidden="true"></span>
+                <span class="dot y" aria-hidden="true"></span>
+                <span class="dot g" aria-hidden="true"></span>
+                <span class="window-app">ChatGPT</span>
+                <span class="phase is-on" id="demoPhase">Found 3</span>
+              </div>
+              <div class="window-body">
+                <p class="field-label">Message</p>
+                <p class="field" id="demoField" aria-hidden="true">Can you email <span class="hit wash">Diego Cuartas</span> at <span class="hit wash">diego@example.com</span> or call <span class="hit wash">+34 600 000 000</span> about Thursday?</p>
+                <div class="capsule" id="demoCapsule" aria-hidden="true">
+                  <span class="cap-icon" title="Protection for this site">
+                    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3.5v7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M7.4 6.6a6.5 6.5 0 1 0 9.2 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                  </span>
+                  <span class="cap-icon" title="Protect all">
+                    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3.2 19.2 6v5.4c0 4.3-2.9 7.4-7.2 9.2-4.3-1.8-7.2-4.9-7.2-9.2V6L12 3.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span class="cap-count">
+                    <svg viewBox="0 0 64 64" width="12" height="12" aria-hidden="true"><path fill="#fff" d="M32 6 54 15.5v16.2c0 13.2-8.6 22.6-22 28.3C18.6 54.3 10 44.9 10 31.7V15.5L32 6z"/></svg>
+                    3
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="review" id="demoReview" aria-label="Vipra review">
+            <div class="review-top">
+              <svg viewBox="0 0 64 64" width="22" height="22" aria-hidden="true"><path fill="#E11D48" d="M32 6 54 15.5v16.2c0 13.2-8.6 22.6-22 28.3C18.6 54.3 10 44.9 10 31.7V15.5L32 6z"/><path fill="none" stroke="#fff" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round" d="M21 19.5 L32 46 L43 19.5"/></svg>
+              <div class="title">Review</div>
+              <span class="review-count">3</span>
+              <span class="review-x" aria-hidden="true">×</span>
+            </div>
+            <div class="group">
+              <div class="group-top"><span class="chip">Name</span><span class="meta">1</span></div>
+              <div class="item"><div class="sample">Diego Cuartas <span class="arrow">→</span> <span class="token">[PERSON_1]</span></div></div>
+            </div>
+            <div class="group">
+              <div class="group-top"><span class="chip">Email</span><span class="meta">1</span></div>
+              <div class="item"><div class="sample">diego@example.com <span class="arrow">→</span> <span class="token">[EMAIL_1]</span></div></div>
+            </div>
+            <div class="group">
+              <div class="group-top"><span class="chip">Phone</span><span class="meta">1</span></div>
+              <div class="item"><div class="sample">+34 600 000 000 <span class="arrow">→</span> <span class="token">[PHONE_1]</span></div></div>
+            </div>
+            <div class="review-foot">
+              <span class="dismiss">Dismiss all</span>
+              <span class="protect-all" id="demoProtect">Protect all</span>
+            </div>
+            <p class="clear-line" id="demoClear" hidden>You’re clear. No sensitive text left to protect.</p>
+          </aside>
+          <p class="demo-note">Preview of the extension on a ChatGPT message. The same review appears on the field you are typing in.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="problem">
+      <div class="wrap">
+        <p class="kicker">The moment</p>
+        <p class="moment">“I’ve pasted that into ChatGPT.”</p>
+        <p class="sub">Not a scare story. A familiar one. The draft was useful. A name, an email, or a number was still in it when you hit send.</p>
+        <div class="moments">
+          <article class="moment-card">
+            <h3>The whole email</h3>
+            <p>You wanted a shorter reply. The signature, the phone, and the person you were writing to went with it.</p>
+          </article>
+          <article class="moment-card">
+            <h3>The scheduling note</h3>
+            <p>A phone number stayed in the message because deleting it felt slower than sending.</p>
+          </article>
+          <article class="moment-card">
+            <h3>The client thread</h3>
+            <p>The brief was fine to discuss. Their address and their customer’s email were not the question.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <p class="kicker">How it works</p>
+        <h2>A pause, then you send.</h2>
+        <p class="sub">Four quiet steps. Vipra stays on the page you are already using.</p>
+        <div class="steps">
+          <article class="step">
+            <div class="n">1</div>
+            <h3>Add it free</h3>
+            <p>Install from Chrome. No account. Five protections a day are included.</p>
+          </article>
+          <article class="step">
+            <div class="n">2</div>
+            <h3>Write as usual</h3>
+            <p>ChatGPT is the field we design around. Other editable fields, including Gmail, can use it too.</p>
+          </article>
+          <article class="step">
+            <div class="n">3</div>
+            <h3>Review</h3>
+            <p>A count appears beside the field. Open it to see Name, Email, Phone, and anything else it found.</p>
+          </article>
+          <article class="step">
+            <div class="n">4</div>
+            <h3>Protect</h3>
+            <p>One click swaps those spans for tokens like <code>[EMAIL_1]</code>. Then you send.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="detects">
+      <div class="wrap">
+        <p class="kicker">What Vipra detects</p>
+        <h2>Only the types it actually looks for.</h2>
+        <p class="sub">Labels match the review panel. Protect turns each one into a numbered token.</p>
+        <ul class="detect">
+          <li><strong>Name</strong><span><code>[PERSON_1]</code> A person’s name.</span></li>
+          <li><strong>Email</strong><span><code>[EMAIL_1]</code> An email address.</span></li>
+          <li><strong>Phone</strong><span><code>[PHONE_1]</code> A phone number.</span></li>
+          <li><strong>IBAN</strong><span><code>[IBAN_1]</code> An international bank account number.</span></li>
+          <li><strong>Card</strong><span><code>[CREDIT_CARD_1]</code> A payment card number.</span></li>
+          <li><strong>National ID</strong><span><code>[NATIONAL_ID_1]</code> A US Social Security number shape. Other national IDs are not claimed.</span></li>
+          <li><strong>IP address</strong><span><code>[IP_ADDRESS_1]</code> An IPv4 address.</span></li>
+          <li><strong>API key</strong><span><code>[API_KEY_1]</code> Common API key shapes.</span></li>
+          <li><strong>Token</strong><span><code>[JWT_1]</code> A JSON Web Token.</span></li>
+          <li><strong>Secret link</strong><span><code>[URL_SECRET_1]</code> A link carrying a password or token.</span></li>
+        </ul>
+        <p class="honest">A private story with none of these can still be something you would not send. Vipra will not catch every nickname, paraphrase, or creative disguise. If you are unsure, take it out yourself.</p>
+      </div>
+    </section>
+
+    <section id="local">
+      <div class="wrap local">
+        <div>
+          <p class="kicker">Why local</p>
+          <h2>The check stays on your device.</h2>
+          <p class="sub">Vipra has to read the field you are editing. That work does not leave the browser.</p>
+        </div>
+        <ul>
+          <li>
+            <strong>Processed here</strong>
+            <p>Finding and protecting text happens in Chrome. Your prompt is not uploaded to Vipra.</p>
+          </li>
+          <li>
+            <strong>No account</strong>
+            <p>Install and use the free protections without signing up.</p>
+          </li>
+          <li>
+            <strong>Checkout is separate</strong>
+            <p>Lifetime payment talks to the payment provider. It is not your prompt.</p>
+          </li>
+          <li>
+            <strong>A personal pause</strong>
+            <p>Helpful before you send. Not your employer’s security system, and not a compliance certificate.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="pricing">
+      <div class="wrap">
+        <p class="kicker">Pricing</p>
+        <h2>Try it. Keep it if you want.</h2>
+        <p class="sub">5 free protections every day. Upgrade once for unlimited.</p>
+        <div class="price-grid">
+          <article class="pcard">
+            <h3>Free</h3>
+            <p class="amount">€0</p>
+            <p>Five protections a day. Same local check. No account and no subscription.</p>
+            <a class="btn btn-primary" href="#pricing">Add to Chrome — Free</a>
+          </article>
+          <article class="pcard lifetime">
+            <h3>Lifetime</h3>
+            <p class="amount">€4.99 <span>once</span></p>
+            <p>Unlimited protections. One payment. Nothing to renew.</p>
+            <a class="btn btn-ink" href="#pricing">Unlock Lifetime — €4.99</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <p class="kicker">FAQ</p>
+        <h2>Short answers.</h2>
+        <div class="faq" style="margin-top: 1rem;">
+          <details>
+            <summary>Does my prompt go to your servers?</summary>
+            <p>No. Vipra reads the field you are editing so it can show what it found and protect it. That stays in your browser. Your prompt is not uploaded to Vipra. Lifetime checkout talks only to the payment provider, separate from what you typed.</p>
+          </details>
+          <details>
+            <summary>Does it work on ChatGPT?</summary>
+            <p>Yes. The ChatGPT message field is the one we design around. Vipra sits beside that field: a count, a review, and Protect.</p>
+          </details>
+          <details>
+            <summary>Does it work in Gmail?</summary>
+            <p>Gmail’s compose box is an editable field, so Vipra can review it too. Some sites draw text in an unusual way. When a highlight cannot line up, the review list is the reliable view.</p>
+          </details>
+          <details>
+            <summary>What happens after 5 protections?</summary>
+            <p>Free includes five protections each day. When those are used, wait until the next day or unlock Lifetime for unlimited protections. Lifetime is €4.99, paid once.</p>
+          </details>
+          <details>
+            <summary>Is Lifetime one payment?</summary>
+            <p>Yes. €4.99 once, for unlimited protections. It is not a subscription, and there is no renewal charge.</p>
+          </details>
+          <details>
+            <summary>What about updates?</summary>
+            <p>Vipra updates through Chrome, like other extensions. Updates are not a second subscription. Lifetime stays one payment for unlimited protections.</p>
+          </details>
+          <details>
+            <summary>Do I need an account?</summary>
+            <p>No. You can install and use Vipra without an account.</p>
+          </details>
+          <details>
+            <summary>What does it detect?</summary>
+            <p>Name, email, phone, IBAN, card, national ID (US Social Security number shape), IPv4 address, common API key shapes, JSON Web Tokens (shown as Token), and secret links. It will not catch every sensitive sentence. Coverage is that list, on your device.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="notes">
+      <div class="wrap">
+        <p class="kicker">Blog</p>
+        <h2>A few notes before you send.</h2>
+        <p class="sub">Practical writing about prompts and personal details. Vipra is mentioned lightly, at the end.</p>
+        <div class="notes">
+          <a class="note-link" href="blog/pasting-into-chatgpt/"><strong>Before you paste that into ChatGPT</strong><span>The useful paste is usually the whole thread.</span></a>
+          <a class="note-link" href="blog/personal-details-in-prompts/"><strong>Take personal details out of a prompt</strong><span>A short edit that keeps the question intact.</span></a>
+          <a class="note-link" href="blog/what-is-pii/"><strong>What people mean by PII</strong><span>A plain explanation, without a legal lecture.</span></a>
+          <a class="note-link" href="blog/work-data-in-chatgpt/"><strong>Work data in ChatGPT</strong><span>A personal pause is not a company policy.</span></a>
+        </div>
+        <p style="margin: 1rem 0 0;"><a href="blog/">All notes</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <strong>Vipra</strong>
+          <p>Before you send that to AI.</p>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="support.html">Support</a>
+          <a href="blog/">Blog</a>
+        </nav>
+      </div>
+      <p class="legal">© Diego / Vipra · Europe/Madrid</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

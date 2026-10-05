@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Take personal details out of a prompt — Vipra</title>
+  <link rel="canonical" href="https://vipra.app/blog/personal-details-in-prompts/" />
+  <meta property="og:url" content="https://vipra.app/blog/personal-details-in-prompts/" />
+  <meta property="og:image" content="https://vipra.app/og.png" />
+  <meta property="og:title" content="Take personal details out of a prompt — Vipra" />
+  <meta property="og:description" content="A short edit that keeps the question and leaves the identifiers behind." />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="A short edit that keeps the question and leaves the identifiers behind." />
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="../../index.html" aria-label="Vipra home">
+        <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><path fill="#E11D48" d="M32 6 54 15.5v16.2c0 13.2-8.6 22.6-22 28.3C18.6 54.3 10 44.9 10 31.7V15.5L32 6z"/><path fill="none" stroke="#fff" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round" d="M21 19.5 L32 46 L43 19.5"/></svg>
+        Vipra
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../../index.html#how">How it works</a>
+        <a href="../../index.html#pricing">Pricing</a>
+        <a href="../../blog/">Blog</a>
+      </nav>
+      <a class="btn btn-primary" href="../../index.html#pricing">Add to Chrome — Free</a>
+    </div>
+  </header>
+  <main class="page">
+    <div class="wrap prose">
+      
+    <p class="kicker">Blog</p>
+    <h1>Take personal details out of a prompt</h1>
+    <p class="dek">A short edit that keeps the question and leaves the identifiers behind.</p>
+    <p class="byline"><time datetime="2026-10-02">2 Oct 2026</time> · Diego / Vipra</p>
+    
+      <p>Most prompts do not need a real person in them. They need the situation. “Rewrite this so it sounds less abrupt” does not require the recipient’s email. “Turn these notes into a checklist” does not require a home address.</p>
+      <h2>A pass you can do by hand</h2>
+      <p>Read the draft once and look for:</p>
+      <ul>
+        <li>Names of people.</li>
+        <li>Email addresses and phone numbers.</li>
+        <li>Street addresses, account numbers, and ID numbers.</li>
+        <li>Links that contain a password, a token, or a long secret.</li>
+        <li>Keys or passwords you pasted from a settings page.</li>
+      </ul>
+      <p>Replace a person with a role if the role matters: “the designer”, “the customer”, “my brother”. Keep the detail the model actually needs, such as the tone, the deadline, or the sentence you dislike.</p>
+      <h2>A tiny before and after</h2>
+      <p>Before: “Email Diego Cuartas at diego@example.com and ask if Thursday still works. Make it warm.”</p>
+      <p>After: “Email the client and ask if Thursday still works. Make it warm.”</p>
+      <p>The second prompt asks for the same help. If you still want the model to refer to a specific stand-in, you can write “email [PERSON_1] at [EMAIL_1]” yourself. That is anonymizing by hand.</p>
+      <p>Vipra does that swap in the field, locally, for the types it knows. Five protections a day are free. It is not a reason to skip the read-through. A confidential plan with no email in it can still be the wrong thing to paste.</p>
+    
+    <div class="related"><p>Keep reading: <a href="../anonymize-a-prompt/">Anonymize a prompt before you ask</a> · <a href="../pasting-into-chatgpt/">Before you paste that into ChatGPT</a></p></div>
+  
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <strong>Vipra</strong>
+          <p>Before you send that to AI.</p>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="../../privacy.html">Privacy</a>
+          <a href="../../terms.html">Terms</a>
+          <a href="../../support.html">Support</a>
+          <a href="../../blog/">Blog</a>
+        </nav>
+      </div>
+      <p class="legal">© Diego / Vipra · Europe/Madrid</p>
+    </div>
+  </footer>
+</body>
+</html>
