@@ -10,9 +10,9 @@
   <link rel="alternate" hreflang="x-default" href="https://vipra.app/" />
   <meta property="og:url" content="https://vipra.app/" />
   <meta property="og:image" content="https://vipra.app/og.png" />
-  <meta name="description" content="Spot names, emails, phones, cards, and US Social Security numbers in any text field before you send. AI chats, email, and forms. Replaced on your device with tokens like [EMAIL_1]." />
+  <meta name="description" content="Spot names, emails, phones, cards, US Social Security numbers and Spanish DNI/NIE in any text field before you send. AI chats, email, and forms. Replaced on your device with tokens like [DNI_1]." />
   <meta property="og:title" content="Protect personal details before you send" />
-  <meta property="og:description" content="Spot names, emails, phones, cards, and US Social Security numbers in any text field before you send. AI chats, email, and forms. Replaced on your device with tokens like [EMAIL_1]." />
+  <meta property="og:description" content="Spot names, emails, phones, cards, US Social Security numbers and Spanish DNI/NIE in any text field before you send. AI chats, email, and forms. Replaced on your device with tokens like [DNI_1]." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="es_ES" />
@@ -143,7 +143,7 @@
         <ul class="benefits">
           <li>
             <h3>In the field</h3>
-            <p>Names, emails, phones, cards, and US Social Security numbers, marked before you send.</p>
+            <p>Names, emails, phones, cards, US Social Security numbers and Spanish DNI/NIE, marked before you send.</p>
           </li>
           <li>
             <h3>On your device</h3>
@@ -207,7 +207,9 @@
           <li><strong>Phone</strong><span><code>[PHONE_1]</code> A phone number.</span></li>
           <li><strong>IBAN</strong><span><code>[IBAN_1]</code> An international bank account number.</span></li>
           <li><strong>Card</strong><span><code>[CREDIT_CARD_1]</code> A payment card number.</span></li>
-          <li><strong>US Social Security number</strong><span><code>[NATIONAL_ID_1]</code> That number shape only. Other national IDs are not detected.</span></li>
+          <li><strong>US Social Security number</strong><span><code>[NATIONAL_ID_1]</code> A US Social Security number.</span></li>
+          <li><strong>Spanish DNI</strong><span><code>[DNI_1]</code> A checksum-validated Spanish DNI, replaced on your device.</span></li>
+          <li><strong>Spanish NIE</strong><span><code>[NIE_1]</code> A checksum-validated Spanish NIE, replaced on your device.</span></li>
           <li><strong>IP address</strong><span><code>[IP_ADDRESS_1]</code> An IPv4 address.</span></li>
           <li><strong>API key</strong><span><code>[API_KEY_1]</code> Common API key shapes.</span></li>
           <li><strong>Token</strong><span><code>[JWT_1]</code> A JSON Web Token.</span></li>
@@ -253,7 +255,7 @@
           </details>
           <details>
             <summary>What does it replace?</summary>
-            <p>Names, emails, phones, cards, IBANs, and US Social Security numbers, plus a few secret shapes (IPs, API keys, tokens, secret links). Each becomes a token like <code>[EMAIL_1]</code>.</p>
+            <p>Names, emails, phones, cards, IBANs, US Social Security numbers and Spanish DNI/NIE, plus a few secret shapes (IPs, API keys, tokens, secret links). Each becomes a token like <code>[EMAIL_1]</code>. A DNI is replaced on your device as <code>[DNI_1]</code>, and a NIE as <code>[NIE_1]</code>.</p>
           </details>
           <details>
             <summary>What counts as a protection?</summary>

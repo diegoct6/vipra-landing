@@ -10,9 +10,9 @@
   <link rel="alternate" hreflang="x-default" href="https://vipra.app/" />
   <meta property="og:url" content="https://vipra.app/es/" />
   <meta property="og:image" content="https://vipra.app/og-es.png" />
-  <meta name="description" content="Detecta nombres, correos, teléfonos, tarjetas y números de la Seguridad Social de EE. UU. en cualquier campo de texto antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [EMAIL_1]." />
+  <meta name="description" content="Detecta DNI/NIE españoles y números de la Seguridad Social de EE. UU., además de nombres, correos, teléfonos y tarjetas, antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [DNI_1]." />
   <meta property="og:title" content="Protege tus datos personales antes de enviar" />
-  <meta property="og:description" content="Detecta nombres, correos, teléfonos, tarjetas y números de la Seguridad Social de EE. UU. en cualquier campo de texto antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [EMAIL_1]." />
+  <meta property="og:description" content="Detecta DNI/NIE españoles y números de la Seguridad Social de EE. UU., además de nombres, correos, teléfonos y tarjetas, antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [DNI_1]." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:locale:alternate" content="en_US" />
@@ -142,7 +142,7 @@
         <ul class="benefits">
           <li>
             <h3>En el campo</h3>
-            <p>Nombres, correos, teléfonos, tarjetas y números de la Seguridad Social de EE. UU., marcados antes de enviar.</p>
+            <p>DNI/NIE españoles, nombres, correos, teléfonos, tarjetas y números de la Seguridad Social de EE. UU., marcados antes de enviar.</p>
           </li>
           <li>
             <h3>En tu dispositivo</h3>
@@ -206,7 +206,9 @@
           <li><strong>Teléfono</strong><span><code>[PHONE_1]</code> Un número de teléfono.</span></li>
           <li><strong>IBAN</strong><span><code>[IBAN_1]</code> Un número de cuenta internacional.</span></li>
           <li><strong>Tarjeta</strong><span><code>[CREDIT_CARD_1]</code> Un número de tarjeta.</span></li>
-          <li><strong>SSN de EE. UU.</strong><span><code>[NATIONAL_ID_1]</code> Solo esa forma de número. El DNI y el resto de documentos nacionales no se detectan.</span></li>
+          <li><strong>DNI</strong><span><code>[DNI_1]</code> Un DNI español con el dígito de control comprobado. Se sustituye en tu dispositivo.</span></li>
+          <li><strong>NIE</strong><span><code>[NIE_1]</code> Un NIE español con el dígito de control comprobado. Se sustituye en tu dispositivo.</span></li>
+          <li><strong>SSN de EE. UU.</strong><span><code>[NATIONAL_ID_1]</code> Números de la Seguridad Social de EE. UU.</span></li>
           <li><strong>Dirección IP</strong><span><code>[IP_ADDRESS_1]</code> Una dirección IPv4.</span></li>
           <li><strong>Clave de API</strong><span><code>[API_KEY_1]</code> Formas habituales de claves de API.</span></li>
           <li><strong>Token</strong><span><code>[JWT_1]</code> Un JSON Web Token.</span></li>
@@ -252,7 +254,7 @@
           </details>
           <details>
             <summary>¿Qué sustituye?</summary>
-            <p>Nombres, correos, teléfonos, tarjetas, IBAN y números de la Seguridad Social de EE. UU., además de algunas formas de secretos (IPs, claves de API, tokens, enlaces con contraseña). Cada uno pasa a un token como <code>[EMAIL_1]</code>.</p>
+            <p>Nombres, correos, teléfonos, tarjetas, IBAN, números de la Seguridad Social de EE. UU. y DNI/NIE españoles, además de algunas formas de secretos (IPs, claves de API, tokens, enlaces con contraseña). Cada uno pasa a un token como <code>[EMAIL_1]</code>. El DNI se sustituye en tu dispositivo por <code>[DNI_1]</code> y el NIE por <code>[NIE_1]</code>.</p>
           </details>
           <details>
             <summary>¿Qué cuenta como una protección?</summary>

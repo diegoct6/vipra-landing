@@ -10,7 +10,7 @@ Offer, stated the same way each time:
 - Lifetime: €4.99 once, unlimited protections
 - Local processing. No subscription. No account.
 
-The extension looks for: Name, Email, Phone, IBAN, Card, National ID (US Social Security number shape), IPv4 address, common API key shapes, JSON Web Token (shown as Token), Secret link. It does not catch every sensitive sentence.
+The extension looks for: Name, Email, Phone, IBAN, Card, US Social Security numbers and Spanish DNI/NIE (replaced on the device as [DNI_1] and [NIE_1]), IPv4 address, common API key shapes, JSON Web Token (shown as Token), Secret link. It does not catch every sensitive sentence.
 
 Replace the store link when the listing exists. Until then, the site buttons go to pricing.
 
@@ -43,7 +43,7 @@ It looks for:
 - Phone
 - IBAN
 - Card
-- National ID (US Social Security number shape)
+- US Social Security numbers and Spanish DNI/NIE ([DNI_1], [NIE_1], checksum-validated, replaced on the device)
 - IP address (IPv4)
 - API key
 - Token (JSON Web Token)
