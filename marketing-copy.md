@@ -115,7 +115,7 @@ Usually the whole email, not just the sentence. The signature goes too.
 
 **Post 3**
 
-Protect turns diego@example.com into [EMAIL_1] before the message leaves the box.
+Protect turns jake@example.com into [EMAIL_1] before the message leaves the box.
 
 The check stays in the browser.
 

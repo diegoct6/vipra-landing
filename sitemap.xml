@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://vipra.app/</loc></url>
-  <url><loc>https://vipra.app/privacy.html</loc></url>
-  <url><loc>https://vipra.app/terms.html</loc></url>
-  <url><loc>https://vipra.app/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://vipra.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/terms.html"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/es/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/terms.html"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/support.html"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/es/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/support.html"/>
+  </url>
   <url><loc>https://vipra.app/blog/</loc></url>
   <url><loc>https://vipra.app/blog/pasting-into-chatgpt/</loc></url>
   <url><loc>https://vipra.app/blog/personal-details-in-prompts/</loc></url>

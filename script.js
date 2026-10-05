@@ -6,17 +6,17 @@
   const protect = document.getElementById("demoProtect");
   const clearLine = document.getElementById("demoClear");
   const live = document.getElementById("demoLive");
-  if (!field || !review || !capsule || !phase || !protect || !clearLine || !live) return;
+  const configEl = document.getElementById("demoConfig");
+  if (!field || !review || !capsule || !phase || !protect || !clearLine || !live || !configEl) return;
 
-  const parts = [
-    { kind: "text", value: "Can you email " },
-    { kind: "hit", value: "Diego Cuartas", token: "[PERSON_1]" },
-    { kind: "text", value: " at " },
-    { kind: "hit", value: "diego@example.com", token: "[EMAIL_1]" },
-    { kind: "text", value: " or call " },
-    { kind: "hit", value: "+34 600 000 000", token: "[PHONE_1]" },
-    { kind: "text", value: " about Thursday?" }
-  ];
+  let config;
+  try {
+    config = JSON.parse(configEl.textContent);
+  } catch (err) {
+    return;
+  }
+  const parts = config.parts;
+  if (!Array.isArray(parts) || !parts.length) return;
 
   function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -53,21 +53,21 @@
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     render("wash");
     showFound(true);
-    setPhase("Found 3", true);
+    setPhase(config.phaseFound, true);
     return;
   }
 
   let announced = false;
-  function say(message) {
+  function say(message, lock) {
     if (announced) return;
     live.textContent = message;
-    if (message.indexOf("Protected") === 0) announced = true;
+    if (lock) announced = true;
   }
 
   async function playOnce() {
     field.replaceChildren();
     showFound(false);
-    setPhase("Before you send", false);
+    setPhase(config.phaseBefore, false);
 
     const nodes = parts.map((part) => {
       if (part.kind === "text") {
@@ -102,8 +102,8 @@
       if (node.nodeType === Node.ELEMENT_NODE) node.classList.add("wash");
     });
     showFound(true);
-    setPhase("Found 3", true);
-    say("Found a name, an email, and a phone number.");
+    setPhase(config.phaseFound, true);
+    say(config.liveFound, false);
     await sleep(1500);
 
     nodes.forEach((node, index) => {
@@ -114,8 +114,8 @@
     });
     protect.classList.add("is-pressed");
     clearLine.hidden = false;
-    setPhase("Protected", true);
-    say("Protected. Swapped for [PERSON_1], [EMAIL_1], and [PHONE_1] before send.");
+    setPhase(config.phaseProtected, true);
+    say(config.liveProtected, true);
     await sleep(2300);
 
     field.style.opacity = "0";

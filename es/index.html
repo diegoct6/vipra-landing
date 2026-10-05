@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vipra — Protege tus datos personales antes de enviar</title>
+  <link rel="canonical" href="https://vipra.app/es/" />
+  <link rel="alternate" hreflang="en" href="https://vipra.app/" />
+  <link rel="alternate" hreflang="es" href="https://vipra.app/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://vipra.app/" />
+  <meta property="og:url" content="https://vipra.app/es/" />
+  <meta property="og:image" content="https://vipra.app/og.png" />
+  <meta name="description" content="Detecta nombres, correos, teléfonos, tarjetas y documentos en cualquier campo de texto antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [EMAIL_1]." />
+  <meta property="og:title" content="Protege tus datos personales antes de enviar" />
+  <meta property="og:description" content="Detecta nombres, correos, teléfonos, tarjetas y documentos en cualquier campo de texto antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [EMAIL_1]." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <!--
+    Añadir a Chrome apunta a #pricing hasta que el listado de Chrome Web Store esté publicado.
+    Sustituye esos href por la URL del listado, por ejemplo:
+    https://chromewebstore.google.com/detail/vipra/<id>
+  -->
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Inicio de Vipra">
+        <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><path fill="#E11D48" d="M32 6 54 15.5v16.2c0 13.2-8.6 22.6-22 28.3C18.6 54.3 10 44.9 10 31.7V15.5L32 6z"/><path fill="none" stroke="#fff" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round" d="M21 19.5 L32 46 L43 19.5"/></svg>
+        Vipra
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#how">Cómo funciona</a>
+        <a href="#pricing">Precio</a>
+      </nav>
+      <div class="nav-end">
+        <nav class="lang" aria-label="Idioma">
+          <a href="../index.html" hreflang="en" lang="en">EN</a>
+          <a href="index.html" hreflang="es" lang="es" aria-current="true">ES</a>
+        </nav>
+        <a class="btn btn-primary nav-cta" href="#pricing"><span class="wide">Añadir a Chrome — Gratis</span><span class="narrow">Gratis</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Cualquier campo de texto</p>
+          <h1>Protege tus datos personales antes de enviar.</h1>
+          <p class="lede">En chats de IA, en el correo y en formularios. Vipra los sustituye en tu dispositivo.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#pricing">Añadir a Chrome — Gratis</a>
+            <a class="btn btn-ghost desktop-only" href="#pricing">De por vida — €4,99</a>
+          </div>
+          <p class="daily">5 gratis al día · De por vida €4,99</p>
+        </div>
+
+        <div class="demo">
+          <p class="sr-only" id="demoLive">Un mensaje de ChatGPT con el nombre Andrés Molina, el correo andres@example.com y un teléfono. La revisión de Vipra los muestra como Nombre, Correo y Teléfono, y Proteger los cambia por [PERSON_1], [EMAIL_1] y [PHONE_1].</p>
+          <div class="scene">
+            <div class="window" title="Pasa el cursor para inclinar">
+              <div class="window-top">
+                <span class="dot r" aria-hidden="true"></span>
+                <span class="dot y" aria-hidden="true"></span>
+                <span class="dot g" aria-hidden="true"></span>
+                <span class="window-app">ChatGPT</span>
+                <span class="phase is-on" id="demoPhase">Hay 3</span>
+              </div>
+              <div class="window-body">
+                <p class="field-label">Mensaje</p>
+                <p class="field" id="demoField" aria-hidden="true">¿Puedes escribirle a <span class="hit wash">Andrés Molina</span> en <span class="hit wash">andres@example.com</span> o llamarle al <span class="hit wash">+34 600 000 000</span> el jueves?</p>
+                <div class="capsule" id="demoCapsule" aria-hidden="true">
+                  <span class="cap-icon" title="Protección en este sitio">
+                    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3.5v7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M7.4 6.6a6.5 6.5 0 1 0 9.2 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                  </span>
+                  <span class="cap-icon" title="Proteger todo">
+                    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3.2 19.2 6v5.4c0 4.3-2.9 7.4-7.2 9.2-4.3-1.8-7.2-4.9-7.2-9.2V6L12 3.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span class="cap-count">
+                    <svg viewBox="0 0 64 64" width="12" height="12" aria-hidden="true"><path fill="#fff" d="M32 6 54 15.5v16.2c0 13.2-8.6 22.6-22 28.3C18.6 54.3 10 44.9 10 31.7V15.5L32 6z"/></svg>
+                    3
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="review" id="demoReview" aria-label="Revisión de Vipra">
+            <div class="review-top">
+              <svg viewBox="0 0 64 64" width="22" height="22" aria-hidden="true"><path fill="#E11D48" d="M32 6 54 15.5v16.2c0 13.2-8.6 22.6-22 28.3C18.6 54.3 10 44.9 10 31.7V15.5L32 6z"/><path fill="none" stroke="#fff" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round" d="M21 19.5 L32 46 L43 19.5"/></svg>
+              <div class="title">Revisión</div>
+              <span class="review-count">3</span>
+              <span class="review-x" aria-hidden="true">×</span>
+            </div>
+            <div class="group">
+              <div class="group-top"><span class="chip">Nombre</span><span class="meta">1</span></div>
+              <div class="item"><div class="sample">Andrés Molina <span class="arrow">→</span> <span class="token">[PERSON_1]</span></div></div>
+            </div>
+            <div class="group">
+              <div class="group-top"><span class="chip">Correo</span><span class="meta">1</span></div>
+              <div class="item"><div class="sample">andres@example.com <span class="arrow">→</span> <span class="token">[EMAIL_1]</span></div></div>
+            </div>
+            <div class="group">
+              <div class="group-top"><span class="chip">Teléfono</span><span class="meta">1</span></div>
+              <div class="item"><div class="sample">+34 600 000 000 <span class="arrow">→</span> <span class="token">[PHONE_1]</span></div></div>
+            </div>
+            <div class="review-foot">
+              <span class="dismiss">Descartar</span>
+              <span class="protect-all" id="demoProtect">Proteger todo</span>
+            </div>
+            <p class="clear-line" id="demoClear" hidden>Listo. No queda texto sensible por proteger.</p>
+          </aside>
+          <p class="demo-note">La misma revisión en chats de IA, correo y formularios.</p>
+          <script type="application/json" id="demoConfig">
+            {
+              "parts": [
+                {"kind": "text", "value": "¿Puedes escribirle a "},
+                {"kind": "hit", "value": "Andrés Molina", "token": "[PERSON_1]"},
+                {"kind": "text", "value": " en "},
+                {"kind": "hit", "value": "andres@example.com", "token": "[EMAIL_1]"},
+                {"kind": "text", "value": " o llamarle al "},
+                {"kind": "hit", "value": "+34 600 000 000", "token": "[PHONE_1]"},
+                {"kind": "text", "value": " el jueves?"}
+              ],
+              "phaseBefore": "Antes de enviar",
+              "phaseFound": "Hay 3",
+              "phaseProtected": "Protegido",
+              "liveFound": "Hay un nombre, un correo y un teléfono.",
+              "liveProtected": "Protegido. Sustituidos por [PERSON_1], [EMAIL_1] y [PHONE_1] antes de enviar."
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="wrap">
+        <h2>Una pausa, y envías.</h2>
+        <ul class="benefits">
+          <li>
+            <h3>En el campo</h3>
+            <p>Nombres, correos, teléfonos, tarjetas y documentos, marcados antes de enviar.</p>
+          </li>
+          <li>
+            <h3>En tu dispositivo</h3>
+            <p>Un clic y pasan a tokens como <code>[EMAIL_1]</code>. Lo que escribes no se sube.</p>
+          </li>
+          <li>
+            <h3>Tú decides</h3>
+            <p>Revisas la lista, proteges o descartas, y envías tú.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band proof" aria-label="Confianza">
+      <div class="wrap proof-inner">
+        <p>En tu dispositivo. Lo que escribes no se sube.</p>
+        <ul class="proof-list">
+          <li>Chats de IA</li>
+          <li>Correo</li>
+          <li>Formularios</li>
+          <li>Documentos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="how" class="desktop-only">
+      <div class="wrap">
+        <p class="kicker">Cómo funciona</p>
+        <h2>Cuatro pasos, sin ruido.</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="n">1</div>
+            <h3>Añádela gratis</h3>
+            <p>Instálala desde Chrome. Sin cuenta. Cinco protecciones al día.</p>
+          </article>
+          <article class="step">
+            <div class="n">2</div>
+            <h3>Escribe donde sea</h3>
+            <p>Los chats de IA son el caso principal. También el correo, los formularios y los documentos.</p>
+          </article>
+          <article class="step">
+            <div class="n">3</div>
+            <h3>Revisa</h3>
+            <p>Aparece un contador junto al campo. Ábrelo para ver qué ha encontrado.</p>
+          </article>
+          <article class="step">
+            <div class="n">4</div>
+            <h3>Protege</h3>
+            <p>Un clic cambia esos fragmentos por tokens. Luego envías.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band desktop-only" id="detects">
+      <div class="wrap">
+        <p class="kicker">Qué detecta Vipra</p>
+        <h2>Solo los tipos que de verdad busca.</h2>
+        <ul class="detect">
+          <li><strong>Nombre</strong><span><code>[PERSON_1]</code> El nombre de una persona.</span></li>
+          <li><strong>Correo</strong><span><code>[EMAIL_1]</code> Una dirección de email.</span></li>
+          <li><strong>Teléfono</strong><span><code>[PHONE_1]</code> Un número de teléfono.</span></li>
+          <li><strong>IBAN</strong><span><code>[IBAN_1]</code> Un número de cuenta internacional.</span></li>
+          <li><strong>Tarjeta</strong><span><code>[CREDIT_CARD_1]</code> Un número de tarjeta.</span></li>
+          <li><strong>Documento</strong><span><code>[NATIONAL_ID_1]</code> Forma de número de la Seguridad Social de EE. UU. Otros documentos, como el DNI, no entran.</span></li>
+          <li><strong>Dirección IP</strong><span><code>[IP_ADDRESS_1]</code> Una dirección IPv4.</span></li>
+          <li><strong>Clave de API</strong><span><code>[API_KEY_1]</code> Formas habituales de claves de API.</span></li>
+          <li><strong>Token</strong><span><code>[JWT_1]</code> Un JSON Web Token.</span></li>
+          <li><strong>Enlace secreto</strong><span><code>[URL_SECRET_1]</code> Un enlace que lleva una contraseña o un token.</span></li>
+        </ul>
+        <p class="honest">Los apodos y las alusiones vagas se le pueden escapar. Si dudas, quítalos tú.</p>
+      </div>
+    </section>
+
+    <section class="band" id="pricing">
+      <div class="wrap">
+        <p class="kicker">Precio</p>
+        <h2>Pruébala. Quédate si quieres.</h2>
+        <div class="price-grid">
+          <article class="pcard">
+            <h3>Gratis</h3>
+            <p class="amount">€0</p>
+            <p>5 protecciones al día.</p>
+            <a class="btn btn-primary" href="#pricing"><span class="wide">Añadir a Chrome — Gratis</span><span class="narrow">Añadir</span></a>
+          </article>
+          <article class="pcard lifetime">
+            <h3>De por vida</h3>
+            <p class="amount">€4,99 <span>una vez</span></p>
+            <p>Ilimitadas. Sin renovación.</p>
+            <a class="btn btn-ink" href="#pricing"><span class="wide">Desbloquear — €4,99</span><span class="narrow">Desbloquear</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <p class="kicker">Preguntas</p>
+        <h2>Respuestas cortas.</h2>
+        <div class="faq">
+          <details>
+            <summary>¿Lo que escribo sale de mi dispositivo?</summary>
+            <p>No. La revisión ocurre en Chrome. Lo que escribes no se sube. La clave de licencia solo se comprueba al activar De por vida, a través de Lemon Squeezy.</p>
+          </details>
+          <details>
+            <summary>¿Dónde funciona?</summary>
+            <p>En cualquier campo de texto. Los chats de IA, como ChatGPT, son el caso principal. También vale para el correo, los formularios y los documentos. Si una web pinta el texto de una forma rara, fíate de la lista de revisión.</p>
+          </details>
+          <details>
+            <summary>¿Qué sustituye?</summary>
+            <p>Nombres, correos, teléfonos, tarjetas, IBAN y documentos, además de algunas formas de secretos (IPs, claves de API, tokens, enlaces con contraseña). Cada uno pasa a un token como <code>[EMAIL_1]</code>.</p>
+          </details>
+          <details>
+            <summary>¿Qué incluye el plan gratis?</summary>
+            <p>Cinco protecciones al día. De por vida son €4,99, una sola vez, con protecciones ilimitadas. Sin suscripción.</p>
+          </details>
+          <details>
+            <summary>¿Hace falta una cuenta?</summary>
+            <p>No.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <strong>Vipra</strong>
+          <p>Protege tus datos personales antes de enviar.</p>
+        </div>
+        <nav class="foot-links" aria-label="Pie">
+          <a href="privacy.html">Privacidad</a>
+          <a href="terms.html">Condiciones</a>
+          <a href="support.html">Soporte</a>
+        </nav>
+      </div>
+      <p class="legal">© Vipra</p>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
