@@ -143,7 +143,14 @@ a:hover { text-decoration: underline; }
   text-align: center; white-space: normal;
   transition: background .15s ease, transform .15s ease;
 }
-.nav-cta { max-width: 16rem; min-width: 0; }
+.nav-cta {
+  max-width: none;
+  white-space: nowrap;
+  font-size: 0.78rem;
+  line-height: 1;
+  padding: 0.42rem 0.72rem;
+  box-shadow: 0 4px 10px rgba(225, 29, 72, 0.18);
+}
 .btn:hover { text-decoration: none; }
 .btn:active { transform: translateY(1px); }
 .btn-primary { background: var(--rose); color: #fff; box-shadow: 0 8px 20px rgba(225, 29, 72, 0.22); }
@@ -607,7 +614,7 @@ footer {
   footer { padding: 1.1rem 0 1.35rem; }
   .nav-cta .wide { display: none; }
   .nav-cta .narrow { display: inline; }
-  .nav-cta { max-width: 9.6rem; padding: 0.4rem 0.55rem; font-size: 0.72rem; }
+  .nav-cta { max-width: none; white-space: nowrap; padding: 0.38rem 0.62rem; font-size: 0.75rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
