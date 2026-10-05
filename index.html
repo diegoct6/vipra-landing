@@ -10,21 +10,17 @@
   <link rel="alternate" hreflang="x-default" href="https://vipra.app/" />
   <meta property="og:url" content="https://vipra.app/" />
   <meta property="og:image" content="https://vipra.app/og.png" />
-  <meta name="description" content="Spot names, emails, phones, cards, and IDs in any text field before you send. AI chats, email, and forms. Replaced on your device with tokens like [EMAIL_1]." />
+  <meta name="description" content="Spot names, emails, phones, cards, and US Social Security numbers in any text field before you send. AI chats, email, and forms. Replaced on your device with tokens like [EMAIL_1]." />
   <meta property="og:title" content="Protect personal details before you send" />
-  <meta property="og:description" content="Spot names, emails, phones, cards, and IDs in any text field before you send. AI chats, email, and forms. Replaced on your device with tokens like [EMAIL_1]." />
+  <meta property="og:description" content="Spot names, emails, phones, cards, and US Social Security numbers in any text field before you send. AI chats, email, and forms. Replaced on your device with tokens like [EMAIL_1]." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="es_ES" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=8738261" />
   <!--
-    Add to Chrome points at #pricing until the Chrome Web Store listing is live.
-    Replace those hrefs with the listing URL, for example:
-    https://chromewebstore.google.com/detail/vipra/<id>
+    Install buttons use data-install. The URL is VIPRA_INSTALL_URL at the top of script.js.
+    It points at #pricing until the Chrome Web Store listing is live.
   -->
 </head>
 <body>
@@ -44,7 +40,7 @@
           <a href="index.html" hreflang="en" lang="en" aria-current="true">EN</a>
           <a href="es/" hreflang="es" lang="es">ES</a>
         </nav>
-        <a class="btn btn-primary nav-cta" href="#pricing"><span class="wide">Add to Chrome — Free</span><span class="narrow">Add free</span></a>
+        <a class="btn btn-primary nav-cta" data-install href="#pricing">Install from the Chrome Web Store</a>
       </div>
     </div>
   </header>
@@ -57,7 +53,7 @@
           <h1>Protect personal details before you send.</h1>
           <p class="lede">In AI chats, email, and forms. Vipra replaces them on your device.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#pricing">Add to Chrome — Free</a>
+            <a class="btn btn-primary" data-install href="#pricing">Install from the Chrome Web Store</a>
             <a class="btn btn-ghost desktop-only" href="#pricing">Lifetime — €4.99</a>
           </div>
           <p class="daily">5 free a day · Lifetime €4.99 once</p>
@@ -147,7 +143,7 @@
         <ul class="benefits">
           <li>
             <h3>In the field</h3>
-            <p>Names, emails, phones, cards, and IDs, marked before you send.</p>
+            <p>Names, emails, phones, cards, and US Social Security numbers, marked before you send.</p>
           </li>
           <li>
             <h3>On your device</h3>
@@ -163,12 +159,11 @@
 
     <section class="band proof" aria-label="Trust">
       <div class="wrap proof-inner">
-        <p>On your device. Nothing you type is uploaded.</p>
+        <p>On your device.</p>
         <ul class="proof-list">
           <li>AI chats</li>
           <li>Email</li>
           <li>Forms</li>
-          <li>Docs</li>
         </ul>
       </div>
     </section>
@@ -186,7 +181,7 @@
           <article class="step">
             <div class="n">2</div>
             <h3>Type anywhere</h3>
-            <p>AI chats are the main case. Email, forms, and docs work too.</p>
+            <p>AI chats are the main case. Email and forms work too.</p>
           </article>
           <article class="step">
             <div class="n">3</div>
@@ -196,7 +191,7 @@
           <article class="step">
             <div class="n">4</div>
             <h3>Protect</h3>
-            <p>One click swaps those spans for tokens. Then you send.</p>
+            <p>One click swaps those details for tokens. Then you send.</p>
           </article>
         </div>
       </div>
@@ -212,7 +207,7 @@
           <li><strong>Phone</strong><span><code>[PHONE_1]</code> A phone number.</span></li>
           <li><strong>IBAN</strong><span><code>[IBAN_1]</code> An international bank account number.</span></li>
           <li><strong>Card</strong><span><code>[CREDIT_CARD_1]</code> A payment card number.</span></li>
-          <li><strong>National ID</strong><span><code>[NATIONAL_ID_1]</code> A US Social Security number shape. Other national IDs are not claimed.</span></li>
+          <li><strong>US Social Security number</strong><span><code>[NATIONAL_ID_1]</code> That number shape only. Other national IDs are not detected.</span></li>
           <li><strong>IP address</strong><span><code>[IP_ADDRESS_1]</code> An IPv4 address.</span></li>
           <li><strong>API key</strong><span><code>[API_KEY_1]</code> Common API key shapes.</span></li>
           <li><strong>Token</strong><span><code>[JWT_1]</code> A JSON Web Token.</span></li>
@@ -231,12 +226,12 @@
             <h3>Free</h3>
             <p class="amount">€0</p>
             <p>5 protections a day.</p>
-            <a class="btn btn-primary" href="#pricing"><span class="wide">Add to Chrome — Free</span><span class="narrow">Add free</span></a>
+            <a class="btn btn-primary" data-install href="#pricing">Install from the Chrome Web Store</a>
           </article>
           <article class="pcard lifetime">
             <h3>Lifetime</h3>
             <p class="amount">€4.99 <span>once</span></p>
-            <p>Unlimited. No renewal.</p>
+            <p>Pay once. Unlimited protections and all future updates, on up to 3 devices.</p>
             <a class="btn btn-ink" href="#pricing"><span class="wide">Unlock Lifetime — €4.99</span><span class="narrow">Unlock</span></a>
           </article>
         </div>
@@ -250,23 +245,31 @@
         <div class="faq">
           <details>
             <summary>Does what I type leave my device?</summary>
-            <p>No. The check runs in Chrome. Nothing you type is uploaded. The license key is checked only when you activate Lifetime, through Lemon Squeezy.</p>
+            <p>Only one thing ever goes online: your license key, which Vipra sends to Lemon Squeezy when you activate Lifetime and about once a week after that to confirm it. Never what you type.</p>
           </details>
           <details>
             <summary>Where does it work?</summary>
-            <p>Any text field. AI chats such as ChatGPT are the main case. Email, forms, and docs work too. If a site draws text in an unusual way, trust the review list.</p>
+            <p>Any text field. AI chats such as ChatGPT are the main case. Email and forms work too. On a few sites the highlights may not line up. If that happens, go by the list in the review panel.</p>
           </details>
           <details>
             <summary>What does it replace?</summary>
-            <p>Names, emails, phones, cards, IBANs, and ID numbers, plus a few secret shapes (IPs, API keys, tokens, secret links). Each becomes a token like <code>[EMAIL_1]</code>.</p>
+            <p>Names, emails, phones, cards, IBANs, and US Social Security numbers, plus a few secret shapes (IPs, API keys, tokens, secret links). Each becomes a token like <code>[EMAIL_1]</code>.</p>
+          </details>
+          <details>
+            <summary>What counts as a protection?</summary>
+            <p>Each click on Protect counts as one, and the free count resets every day.</p>
           </details>
           <details>
             <summary>What does free include?</summary>
-            <p>Five protections a day. Lifetime is €4.99 once for unlimited protections. No subscription.</p>
+            <p>Five protections a day. Lifetime is €4.99 once: unlimited protections and all future updates, on up to 3 devices.</p>
           </details>
           <details>
             <summary>Do I need an account?</summary>
-            <p>No.</p>
+            <p>No. When you buy Lifetime, you get a license key by email. Paste it into Vipra to unlock. On a new computer, install Vipra and paste the same key.</p>
+          </details>
+          <details>
+            <summary>I got a new laptop. How do I restore Lifetime?</summary>
+            <p>Install Vipra and paste your license key. You can find it in your Lemon Squeezy receipt email, in Lemon Squeezy’s My Orders page (<a href="https://app.lemonsqueezy.com/my-orders">https://app.lemonsqueezy.com/my-orders</a>), or by writing to <a href="mailto:hello@vipra.app">hello@vipra.app</a>. One key works on up to 3 devices.</p>
           </details>
         </div>
       </div>
@@ -296,6 +299,7 @@
         </div>
         <nav class="foot-links" aria-label="Footer">
           <a href="privacy.html">Privacy</a>
+          <a href="legal.html">Legal notice</a>
           <a href="terms.html">Terms</a>
           <a href="support.html">Support</a>
           <a href="blog/">Blog</a>

@@ -40,14 +40,26 @@
   <url>
     <loc>https://vipra.app/support.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/support.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/soporte.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/support.html"/>
   </url>
   <url>
-    <loc>https://vipra.app/es/support.html</loc>
+    <loc>https://vipra.app/es/soporte.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/support.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/soporte.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/support.html"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/legal.html"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/es/aviso-legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/legal.html"/>
   </url>
   <url><loc>https://vipra.app/blog/</loc></url>
   <url><loc>https://vipra.app/blog/pasting-into-chatgpt/</loc></url>

@@ -11,15 +11,12 @@
   <meta property="og:url" content="https://vipra.app/es/privacy.html" />
   <meta property="og:image" content="https://vipra.app/og-es.png" />
   <meta property="og:title" content="Privacidad — Vipra" />
-  <meta property="og:description" content="Nada de lo que escribes con Vipra sale de tu dispositivo. La clave de licencia solo se comprueba al activar De por vida, a través de Lemon Squeezy." />
+  <meta property="og:description" content="Lo que escribes no se sube nunca. La detección y el reemplazo ocurren en tu dispositivo. Vipra envía tu clave de licencia a Lemon Squeezy al activarla y en comprobaciones más o menos semanales. Sin analítica y sin cookies de seguimiento." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:locale:alternate" content="en_US" />
-  <meta name="description" content="Nada de lo que escribes con Vipra sale de tu dispositivo. La clave de licencia solo se comprueba al activar De por vida, a través de Lemon Squeezy." />
+  <meta name="description" content="Lo que escribes no se sube nunca. La detección y el reemplazo ocurren en tu dispositivo. Vipra envía tu clave de licencia a Lemon Squeezy al activarla y en comprobaciones más o menos semanales. Sin analítica y sin cookies de seguimiento." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css?v=8738261" />
 </head>
 <body>
@@ -38,7 +35,7 @@
           <a href="../privacy.html" hreflang="en" lang="en">EN</a>
           <a href="privacy.html" hreflang="es" lang="es" aria-current="true">ES</a>
         </nav>
-        <a class="btn btn-primary nav-cta" href="index.html#pricing"><span class="wide">Añadir a Chrome — Gratis</span><span class="narrow">Gratis</span></a>
+        <a class="btn btn-primary nav-cta" data-install data-install-home="index.html" href="index.html#pricing">Instalar desde Chrome Web Store</a>
       </div>
     </div>
   </header>
@@ -46,14 +43,17 @@
     <div class="wrap prose">
       <p class="kicker">Privacidad</p>
       <h1>Privacidad</h1>
-      <p class="dek">Nada de lo que escribes sale de tu dispositivo.</p>
+      <p class="dek">Lo que escribes no se sube nunca. En vigor el 5 de octubre de 2026 (Europa/Madrid).</p>
       <h2>En tu dispositivo</h2>
-      <p>Vipra lee el campo de texto que estás editando para detectar datos personales y sustituirlos por tokens. Esa revisión ocurre en Chrome. El texto no se sube.</p>
-      <h2>Activación de por vida</h2>
-      <p>La clave de licencia solo se comprueba al activar De por vida, a través de Lemon Squeezy. En esa comprobación viaja la clave, no lo que has escrito.</p>
-      <h2>Sin cuenta</h2>
-      <p>Puedes instalar Vipra y usar las protecciones gratis sin crear una cuenta. El plan gratis incluye cinco protecciones al día. De por vida son €4,99, un único pago.</p>
-      <p>Dudas: <a href="mailto:hello@vipra.app">hello@vipra.app</a>.</p>
+      <p>La detección y el reemplazo ocurren en tu dispositivo. Vipra lee el campo de texto que estás editando en Chrome, localiza datos personales y puede cambiarlos por tokens. Ese texto no sale del ordenador.</p>
+      <h2>La clave de licencia</h2>
+      <p>La única petición de red es tu clave de licencia, que Vipra envía a Lemon Squeezy (merchant of record) al activar De por vida y en comprobaciones más o menos semanales después, para confirmarla. Esa petición no incluye lo que escribes.</p>
+      <h2>Soporte</h2>
+      <p>Si escribes al soporte, tu email y tu nombre se usan solo para comprobar la compra.</p>
+      <h2>Analítica y cookies</h2>
+      <p>Sin analítica. Sin cookies de seguimiento.</p>
+      <h2>Contacto</h2>
+      <p><a href="mailto:hello@vipra.app">hello@vipra.app</a></p>
     </div>
   </main>
   <footer>
@@ -65,12 +65,14 @@
         </div>
         <nav class="foot-links" aria-label="Pie">
           <a href="privacy.html">Privacidad</a>
+          <a href="aviso-legal.html">Aviso legal</a>
           <a href="terms.html">Condiciones</a>
-          <a href="support.html">Soporte</a>
+          <a href="soporte.html">Soporte</a>
         </nav>
       </div>
       <p class="legal">© Vipra</p>
     </div>
   </footer>
+  <script src="../script.js?v=8738261"></script>
 </body>
 </html>

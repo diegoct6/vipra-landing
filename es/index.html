@@ -10,21 +10,17 @@
   <link rel="alternate" hreflang="x-default" href="https://vipra.app/" />
   <meta property="og:url" content="https://vipra.app/es/" />
   <meta property="og:image" content="https://vipra.app/og-es.png" />
-  <meta name="description" content="Detecta nombres, correos, teléfonos, tarjetas y documentos en cualquier campo de texto antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [EMAIL_1]." />
+  <meta name="description" content="Detecta nombres, correos, teléfonos, tarjetas y números de la Seguridad Social de EE. UU. en cualquier campo de texto antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [EMAIL_1]." />
   <meta property="og:title" content="Protege tus datos personales antes de enviar" />
-  <meta property="og:description" content="Detecta nombres, correos, teléfonos, tarjetas y documentos en cualquier campo de texto antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [EMAIL_1]." />
+  <meta property="og:description" content="Detecta nombres, correos, teléfonos, tarjetas y números de la Seguridad Social de EE. UU. en cualquier campo de texto antes de enviar. Chats de IA, email y formularios. En tu dispositivo, con tokens como [EMAIL_1]." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:locale:alternate" content="en_US" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css?v=8738261" />
   <!--
-    Añadir a Chrome apunta a #pricing hasta que el listado de Chrome Web Store esté publicado.
-    Sustituye esos href por la URL del listado, por ejemplo:
-    https://chromewebstore.google.com/detail/vipra/<id>
+    Los botones de instalación usan data-install. La URL es VIPRA_INSTALL_URL, al inicio de script.js.
+    Apunta a #pricing hasta que exista el listado de Chrome Web Store.
   -->
 </head>
 <body>
@@ -43,7 +39,7 @@
           <a href="../index.html" hreflang="en" lang="en">EN</a>
           <a href="index.html" hreflang="es" lang="es" aria-current="true">ES</a>
         </nav>
-        <a class="btn btn-primary nav-cta" href="#pricing"><span class="wide">Añadir a Chrome — Gratis</span><span class="narrow">Gratis</span></a>
+        <a class="btn btn-primary nav-cta" data-install href="#pricing">Instalar desde Chrome Web Store</a>
       </div>
     </div>
   </header>
@@ -56,10 +52,10 @@
           <h1>Protege tus datos personales antes de enviar.</h1>
           <p class="lede">En chats de IA, en el correo y en formularios. Vipra los sustituye en tu dispositivo.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#pricing">Añadir a Chrome — Gratis</a>
-            <a class="btn btn-ghost desktop-only" href="#pricing">De por vida — €4,99</a>
+            <a class="btn btn-primary" data-install href="#pricing">Instalar desde Chrome Web Store</a>
+            <a class="btn btn-ghost desktop-only" href="#pricing">De por vida — 4,99 €</a>
           </div>
-          <p class="daily">5 gratis al día · De por vida €4,99</p>
+          <p class="daily">5 gratis al día · De por vida 4,99 €</p>
         </div>
 
         <div class="demo">
@@ -146,7 +142,7 @@
         <ul class="benefits">
           <li>
             <h3>En el campo</h3>
-            <p>Nombres, correos, teléfonos, tarjetas y documentos, marcados antes de enviar.</p>
+            <p>Nombres, correos, teléfonos, tarjetas y números de la Seguridad Social de EE. UU., marcados antes de enviar.</p>
           </li>
           <li>
             <h3>En tu dispositivo</h3>
@@ -162,12 +158,11 @@
 
     <section class="band proof" aria-label="Confianza">
       <div class="wrap proof-inner">
-        <p>En tu dispositivo. Lo que escribes no se sube.</p>
+        <p>En tu dispositivo.</p>
         <ul class="proof-list">
           <li>Chats de IA</li>
           <li>Correo</li>
           <li>Formularios</li>
-          <li>Documentos</li>
         </ul>
       </div>
     </section>
@@ -185,7 +180,7 @@
           <article class="step">
             <div class="n">2</div>
             <h3>Escribe donde sea</h3>
-            <p>Los chats de IA son el caso principal. También el correo, los formularios y los documentos.</p>
+            <p>Los chats de IA son el caso principal. También el correo y los formularios.</p>
           </article>
           <article class="step">
             <div class="n">3</div>
@@ -195,7 +190,7 @@
           <article class="step">
             <div class="n">4</div>
             <h3>Protege</h3>
-            <p>Un clic cambia esos fragmentos por tokens. Luego envías.</p>
+            <p>Un clic cambia esos detalles por tokens. Luego envías.</p>
           </article>
         </div>
       </div>
@@ -211,7 +206,7 @@
           <li><strong>Teléfono</strong><span><code>[PHONE_1]</code> Un número de teléfono.</span></li>
           <li><strong>IBAN</strong><span><code>[IBAN_1]</code> Un número de cuenta internacional.</span></li>
           <li><strong>Tarjeta</strong><span><code>[CREDIT_CARD_1]</code> Un número de tarjeta.</span></li>
-          <li><strong>Documento</strong><span><code>[NATIONAL_ID_1]</code> Forma de número de la Seguridad Social de EE. UU. Otros documentos, como el DNI, no entran.</span></li>
+          <li><strong>SSN de EE. UU.</strong><span><code>[NATIONAL_ID_1]</code> Solo esa forma de número. El DNI y el resto de documentos nacionales no se detectan.</span></li>
           <li><strong>Dirección IP</strong><span><code>[IP_ADDRESS_1]</code> Una dirección IPv4.</span></li>
           <li><strong>Clave de API</strong><span><code>[API_KEY_1]</code> Formas habituales de claves de API.</span></li>
           <li><strong>Token</strong><span><code>[JWT_1]</code> Un JSON Web Token.</span></li>
@@ -224,19 +219,19 @@
     <section class="band" id="pricing">
       <div class="wrap">
         <p class="kicker">Precio</p>
-        <h2>Pruébala. Quédate si quieres.</h2>
+        <h2>Pruébala. Quédatela si te gusta.</h2>
         <div class="price-grid">
           <article class="pcard">
             <h3>Gratis</h3>
             <p class="amount">€0</p>
             <p>5 protecciones al día.</p>
-            <a class="btn btn-primary" href="#pricing"><span class="wide">Añadir a Chrome — Gratis</span><span class="narrow">Añadir</span></a>
+            <a class="btn btn-primary" data-install href="#pricing">Instalar desde Chrome Web Store</a>
           </article>
           <article class="pcard lifetime">
             <h3>De por vida</h3>
-            <p class="amount">€4,99 <span>una vez</span></p>
-            <p>Ilimitadas. Sin renovación.</p>
-            <a class="btn btn-ink" href="#pricing"><span class="wide">Desbloquear — €4,99</span><span class="narrow">Desbloquear</span></a>
+            <p class="amount">4,99 € <span>una vez</span></p>
+            <p>Paga una vez. Protecciones ilimitadas y todas las actualizaciones futuras, en hasta 3 dispositivos.</p>
+            <a class="btn btn-ink" href="#pricing"><span class="wide">Desbloquear — 4,99 €</span><span class="narrow">Desbloquear</span></a>
           </article>
         </div>
       </div>
@@ -249,23 +244,31 @@
         <div class="faq">
           <details>
             <summary>¿Lo que escribo sale de mi dispositivo?</summary>
-            <p>No. La revisión ocurre en Chrome. Lo que escribes no se sube. La clave de licencia solo se comprueba al activar De por vida, a través de Lemon Squeezy.</p>
+            <p>Solo hay una cosa que sale a internet: tu clave de licencia, que Vipra envía a Lemon Squeezy al activar De por vida y más o menos una vez por semana después, para comprobarla. Nunca lo que escribes.</p>
           </details>
           <details>
             <summary>¿Dónde funciona?</summary>
-            <p>En cualquier campo de texto. Los chats de IA, como ChatGPT, son el caso principal. También vale para el correo, los formularios y los documentos. Si una web pinta el texto de una forma rara, fíate de la lista de revisión.</p>
+            <p>En cualquier campo de texto. Los chats de IA, como ChatGPT, son el caso principal. También el correo y los formularios. En algunas webs el subrayado puede no coincidir. Si pasa, guíate por la lista del panel de revisión.</p>
           </details>
           <details>
             <summary>¿Qué sustituye?</summary>
-            <p>Nombres, correos, teléfonos, tarjetas, IBAN y documentos, además de algunas formas de secretos (IPs, claves de API, tokens, enlaces con contraseña). Cada uno pasa a un token como <code>[EMAIL_1]</code>.</p>
+            <p>Nombres, correos, teléfonos, tarjetas, IBAN y números de la Seguridad Social de EE. UU., además de algunas formas de secretos (IPs, claves de API, tokens, enlaces con contraseña). Cada uno pasa a un token como <code>[EMAIL_1]</code>.</p>
+          </details>
+          <details>
+            <summary>¿Qué cuenta como una protección?</summary>
+            <p>Cada clic en Proteger cuenta como una, y el contador del plan gratis se reinicia cada día.</p>
           </details>
           <details>
             <summary>¿Qué incluye el plan gratis?</summary>
-            <p>Cinco protecciones al día. De por vida son €4,99, una sola vez, con protecciones ilimitadas. Sin suscripción.</p>
+            <p>Cinco protecciones al día. De por vida son 4,99 €, un único pago: protecciones ilimitadas y todas las actualizaciones futuras, en hasta 3 dispositivos.</p>
           </details>
           <details>
             <summary>¿Hace falta una cuenta?</summary>
-            <p>No.</p>
+            <p>No. Cuando compras De por vida, te llega una clave de licencia por email. Pégala en Vipra para desbloquearla. En otro ordenador, instala Vipra y pega la misma clave.</p>
+          </details>
+          <details>
+            <summary>He cambiado de portátil. ¿Cómo recupero De por vida?</summary>
+            <p>Instala Vipra y pega tu clave de licencia. La encuentras en el email del recibo de Lemon Squeezy, en la página My Orders de Lemon Squeezy (<a href="https://app.lemonsqueezy.com/my-orders">https://app.lemonsqueezy.com/my-orders</a>) o escribiendo a <a href="mailto:hello@vipra.app">hello@vipra.app</a>. Una clave funciona en hasta 3 dispositivos.</p>
           </details>
         </div>
       </div>
@@ -281,8 +284,9 @@
         </div>
         <nav class="foot-links" aria-label="Pie">
           <a href="privacy.html">Privacidad</a>
+          <a href="aviso-legal.html">Aviso legal</a>
           <a href="terms.html">Condiciones</a>
-          <a href="support.html">Soporte</a>
+          <a href="soporte.html">Soporte</a>
         </nav>
       </div>
       <p class="legal">© Vipra</p>

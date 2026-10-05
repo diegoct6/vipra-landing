@@ -11,15 +11,12 @@
   <meta property="og:url" content="https://vipra.app/privacy.html" />
   <meta property="og:image" content="https://vipra.app/og.png" />
   <meta property="og:title" content="Privacy — Vipra" />
-  <meta property="og:description" content="Nothing you type in Vipra leaves your device. The license key is checked only when you activate Lifetime, through Lemon Squeezy." />
+  <meta property="og:description" content="Nothing you type is ever uploaded. Detection and replacement happen on your device. Vipra sends your license key to Lemon Squeezy at activation and in roughly weekly rechecks. No analytics and no tracking cookies." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="es_ES" />
-  <meta name="description" content="Nothing you type in Vipra leaves your device. The license key is checked only when you activate Lifetime, through Lemon Squeezy." />
+  <meta name="description" content="Nothing you type is ever uploaded. Detection and replacement happen on your device. Vipra sends your license key to Lemon Squeezy at activation and in roughly weekly rechecks. No analytics and no tracking cookies." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=8738261" />
 </head>
 <body>
@@ -39,7 +36,7 @@
           <a href="privacy.html" hreflang="en" lang="en" aria-current="true">EN</a>
           <a href="es/privacy.html" hreflang="es" lang="es">ES</a>
         </nav>
-        <a class="btn btn-primary nav-cta" href="index.html#pricing"><span class="wide">Add to Chrome — Free</span><span class="narrow">Add free</span></a>
+        <a class="btn btn-primary nav-cta" data-install data-install-home="index.html" href="index.html#pricing">Install from the Chrome Web Store</a>
       </div>
     </div>
   </header>
@@ -47,14 +44,17 @@
     <div class="wrap prose">
       <p class="kicker">Privacy</p>
       <h1>Privacy</h1>
-      <p class="dek">Nothing you type leaves your device.</p>
+      <p class="dek">Nothing you type is ever uploaded. Effective 5 October 2026 (Europe/Madrid).</p>
       <h2>On your device</h2>
-      <p>Vipra reads the text field you are editing so it can spot personal details and replace them with tokens. That check runs in Chrome. The text is not uploaded.</p>
-      <h2>Lifetime activation</h2>
-      <p>The license key is checked only when you activate Lifetime, through Lemon Squeezy. That check sends the key, not what you typed.</p>
-      <h2>No account</h2>
-      <p>You can install Vipra and use the free protections without an account. Free is five protections a day. Lifetime is €4.99, paid once.</p>
-      <p>Questions: <a href="mailto:hello@vipra.app">hello@vipra.app</a>.</p>
+      <p>Detection and replacement happen on your device. Vipra reads the text field you are editing in Chrome, spots personal details, and can swap them for tokens. That text never leaves the computer.</p>
+      <h2>The license key</h2>
+      <p>The only network request is your license key, which Vipra sends to Lemon Squeezy (the merchant of record) when you activate Lifetime and in roughly weekly rechecks after that, to confirm the key. The check does not include what you type.</p>
+      <h2>Support</h2>
+      <p>If you email support, your email and name are used only to verify your purchase.</p>
+      <h2>Analytics and cookies</h2>
+      <p>No analytics. No tracking cookies.</p>
+      <h2>Contact</h2>
+      <p><a href="mailto:hello@vipra.app">hello@vipra.app</a></p>
     </div>
   </main>
   <footer>
@@ -66,6 +66,7 @@
         </div>
         <nav class="foot-links" aria-label="Footer">
           <a href="privacy.html">Privacy</a>
+          <a href="legal.html">Legal notice</a>
           <a href="terms.html">Terms</a>
           <a href="support.html">Support</a>
           <a href="blog/">Blog</a>
@@ -74,5 +75,6 @@
       <p class="legal">© Vipra</p>
     </div>
   </footer>
+  <script src="script.js?v=8738261"></script>
 </body>
 </html>
