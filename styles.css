@@ -556,9 +556,10 @@ footer {
 }
 .activate-shot img {
   display: block;
-  max-width: min(100%, 360px);
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin: 0 auto;
+  border-radius: 10px;
 }
 .activate-links { margin-top: 1.15rem; }
 .activate-links .btn { margin-right: 0.75rem; margin-bottom: 0.45rem; }
