@@ -544,8 +544,24 @@ footer {
 .prose .dek { font-size: 1.15rem; color: #3f3f46; margin-top: 0.8rem; }
 .prose h2 { font-size: 1.35rem; margin: 1.8rem 0 0.4rem; }
 .prose p, .prose li { font-size: 1.02rem; color: #27272a; }
-.prose ul { padding-left: 1.15rem; }
-.prose li { margin: 0.3rem 0; }
+.prose ul, .prose ol { padding-left: 1.25rem; }
+.prose li { margin: 0.45rem 0; }
+.activate-shot {
+  margin: 1.35rem 0 0;
+  padding: 0.85rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+.activate-shot img {
+  display: block;
+  max-width: min(100%, 360px);
+  height: auto;
+  margin: 0 auto;
+}
+.activate-links { margin-top: 1.15rem; }
+.activate-links .btn { margin-right: 0.75rem; margin-bottom: 0.45rem; }
 .byline { color: var(--muted); font-size: 0.85rem; margin-top: 0.8rem; }
 .soft {
   margin-top: 1.8rem;

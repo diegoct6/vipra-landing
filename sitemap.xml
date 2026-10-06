@@ -50,6 +50,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/support.html"/>
   </url>
   <url>
+    <loc>https://vipra.app/thanks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/thanks.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/gracias.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/thanks.html"/>
+  </url>
+  <url>
+    <loc>https://vipra.app/es/gracias.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/thanks.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/gracias.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipra.app/thanks.html"/>
+  </url>
+  <url>
     <loc>https://vipra.app/legal.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipra.app/legal.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vipra.app/es/aviso-legal.html"/>
