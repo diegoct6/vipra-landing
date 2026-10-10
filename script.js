@@ -1,8 +1,7 @@
-// Every install button reads this one value. It points at #pricing until the
-// Chrome Web Store listing exists. An absolute URL is copied onto each
-// [data-install] link as-is. A hash is prefixed with data-install-home on
-// inner pages so they still reach pricing.
-var VIPRA_INSTALL_URL = "#pricing";
+// Every install button reads this one value. An absolute URL is copied onto
+// each [data-install] link as-is. A hash is prefixed with data-install-home
+// on inner pages so they still reach the homepage.
+var VIPRA_INSTALL_URL = "https://chromewebstore.google.com/detail/ldedclemepifgcohefnfdcebfpjabhno";
 
 document.querySelectorAll("[data-install]").forEach(function (node) {
   var url = VIPRA_INSTALL_URL;
